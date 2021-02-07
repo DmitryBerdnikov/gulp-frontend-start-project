@@ -3,5 +3,8 @@
   "parser": "@babel/eslint-parser",
   "env": {
     "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["gulpfile.babel.js", "gulp/**/*"]}]
   }
 }

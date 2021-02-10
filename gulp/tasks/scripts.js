@@ -15,7 +15,7 @@ export const scriptsBuild = () => (
       console.log(error.stack);
       this.emit('end');
     })
-    .pipe(source('main.js'))
+    .pipe(source('main.min.js'))
     .pipe(buffer())
     .pipe(gulpif(config.isDev, sourcemaps.init({ loadMaps: true })))
     .pipe(gulpif(config.isProd, uglify()))

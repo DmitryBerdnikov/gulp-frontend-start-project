@@ -29,13 +29,20 @@
     "@babel/eslint-parser": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/register": "^7.12.13",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.14",
+    "browserify": "^17.0.0",
     "del": "^6.0.0",
     "eslint": "^7.19.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.4"
+    "lint-staged": "^10.5.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }

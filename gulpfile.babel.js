@@ -12,7 +12,7 @@ export const build = gulp.series(
 );
 
 export const watch = gulp.series(
-  // build,
+  build,
   server,
   scriptsWatch,
 );

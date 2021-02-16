@@ -26,5 +26,3 @@ export const watch = gulp.series(
     sassWatch,
   ),
 );
-
-exports.sass = sassBuild;

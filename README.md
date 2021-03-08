@@ -1,4 +1,4 @@
-# Gulp стартовый шаблон pug, scss, es6
+# Gulp стартовый шаблон pug, scss
 
 [Как создавалсь сборка](https://www.youtube.com/playlist?list=PL9-oPVq1RtrWz_WUDApjRvEnKVF6I4y0C)
 

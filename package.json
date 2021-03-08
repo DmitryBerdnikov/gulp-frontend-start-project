@@ -69,5 +69,9 @@
     "stylelint-scss": "^3.19.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "focus-visible": "^5.2.0",
+    "vanilla-lazyload": "^17.3.1"
   }
 }

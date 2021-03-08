@@ -9,7 +9,7 @@ const emittyPug = emittySetup(config.src.pug, 'pug', {
   makeVinylFile: true,
 });
 
-global.watch = false;
+global.isPugWatch = false;
 global.emittyChangedFile = {
   path: '',
   stats: null,
@@ -20,7 +20,7 @@ export const pugBuild = () => (
     .pipe(plumber())
     .pipe(
       gulpif(
-        global.watch,
+        global.isPugWatch,
         emittyPug.stream(
           global.emittyChangedFile.path,
           global.emittyChangedFile.stats,
@@ -32,7 +32,7 @@ export const pugBuild = () => (
 );
 
 export const pugWatch = () => {
-  global.watch = true;
+  global.isPugWatch = true;
 
   gulp.watch(`${config.src.pug}/**/*.pug`, pugBuild)
     .on('all', (event, filepath, stats) => {

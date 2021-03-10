@@ -1,0 +1,39 @@
+@import 'normalize.css/normalize';
+
+@include focus-visible;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  min-height: 100%;
+
+  font-family: $font-family-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+@each $heading, $font-size in $font-size-headings {
+  #{$heading} {
+    font-size: $font-size;
+    font-family: $font-family-secondary;
+  }
+}

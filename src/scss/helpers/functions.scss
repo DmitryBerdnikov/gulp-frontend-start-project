@@ -1,0 +1,7 @@
+@function get-theme-color($key) {
+  @return map-get($theme-colors, $key);
+}
+
+@function get-spacer($key) {
+  @return map-get($spacers, $key);
+}

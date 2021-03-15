@@ -1,0 +1,7 @@
+mixin icon-mono(name)
+  svg(class="icon icon-" + name)&attributes(attributes)
+    use(xlink:href="images/sprites/sprite-mono.svg#" + name)
+
+mixin icon-multi(name)
+  svg(class="icon icon-" + name)&attributes(attributes)
+    use(xlink:href="images/sprites/sprite-multi.svg#" + name)

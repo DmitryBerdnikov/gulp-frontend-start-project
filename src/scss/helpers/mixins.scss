@@ -1,0 +1,21 @@
+@mixin media-breakpoint-up($key) {
+  $min: map-get($grid-breakpoints, $key);
+
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin focus-visible {
+  @if (&) {
+    .js-focus-visible &:focus:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  @else {
+    .js-focus-visible :focus:not(.focus-visible) {
+      outline: none;
+    }
+  }
+}

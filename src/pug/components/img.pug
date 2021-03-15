@@ -1,0 +1,20 @@
+mixin imgLazy(src)
+  img(class="lazy", data-src=src, src="images/common/placeholder.png", alt="")&attributes(attributes)
+
+
+mixin img(src, srcPlaceholder="images/common/placeholder.png")
+  - const srcParts = src.split('.')
+  - const [srcFirstPart, extname] = srcParts
+
+  picture
+    source(type="image/webp", data-srcset=`${srcFirstPart}.webp`, srcset=srcPlaceholder)
+    img(class="lazy", data-src=`${srcFirstPart}.${extname}`, src=srcPlaceholder, alt="")&attributes(attributes)
+
+
+mixin img2x(src, srcPlaceholder="images/common/placeholder.png")
+  - const srcParts = src.split('.')
+  - const [srcFirstPart, extname] = srcParts
+
+  picture
+    source(type="image/webp", data-srcset=`${srcFirstPart}.webp 1x, ${srcFirstPart}@2x.webp 2x`, srcset=srcPlaceholder)
+    img(class="lazy", data-src=`${srcFirstPart}.${extname}`, data-srcset=`${srcFirstPart}.${extname} 1x, ${srcFirstPart}@2x.${extname} 2x`, src=srcPlaceholder, alt="")&attributes(attributes)

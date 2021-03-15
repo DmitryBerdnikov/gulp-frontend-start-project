@@ -1,0 +1,40 @@
+$theme-colors: (
+  'primary': #000,
+  'secondary': #000,
+  'white': #000,
+);
+
+$grid-breakpoints: (
+  sm: $break_sm,
+  md: $break_md,
+  lg: $break_lg,
+  xl: $break_xl,
+);
+
+$spacer: 1rem;
+$spacers: (
+  1: ($spacer * 0.25),
+  2: ($spacer * 0.5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+  6: ($spacer * 3),
+);
+
+$font-family-secondary: 'Arial', sans-serif;
+$font-family-primary: 'Arial', sans-serif;
+
+$font-size-base: 1rem;
+
+$font-size-headings: (
+  h1: $font-size-base * 4,
+  h2: $font-size-base * 3,
+  h3: $font-size-base * 2,
+  h4: $font-size-base * 1.5,
+  h5: $font-size-base * 1.25,
+  h6: $font-size-base,
+);
+
+$border-radius: 1rem;
+$transition-time: 0.2s;
+$box-shadow: 0 0 0 #fff;

@@ -1,0 +1,21 @@
+include ../data/config.pug
+include ../components/**/*.pug
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    include ../parts/head.pug
+
+  body(class=bodyClass)
+    block header
+      include ../parts/header.pug
+
+    block content
+
+    block footer
+      include ../parts/footer.pug
+
+    block scripts
+      script(src="js/main.min.js?v=" + siteVersion)
